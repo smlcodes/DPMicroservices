@@ -9,11 +9,11 @@
 		<version>2.6.7</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.usermanagement</groupId>
-	<artifactId>dpuser</artifactId>
+	<groupId>com.portsmanagement</groupId>
+	<artifactId>dpports</artifactId>
 	<version>1.0</version>
-	<name>DP_UserManagementMicroservice</name>
-	<description>DPUserManagement</description>
+	<name>DP_PortsManagementMicroservice</name>
+	<description>DPPortsManagement</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -71,12 +71,6 @@
 			<version>3.0.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
-		<dependency>
-			<groupId>com.opencsv</groupId>
-			<artifactId>opencsv</artifactId>
-			<version>5.6</version>
-		</dependency>
 
 	</dependencies>
 

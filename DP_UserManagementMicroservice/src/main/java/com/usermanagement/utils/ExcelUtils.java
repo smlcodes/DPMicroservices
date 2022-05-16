@@ -13,8 +13,7 @@ public class ExcelUtils {
 
 	public List<User> userDataExcelProcessing(InputStream inputStream) {
 
-	 
-		List<UserExcel> rows = Poiji.fromExcel(inputStream, PoijiExcelType.XLSX, UserExcel.class );		
+		List<UserExcel> rows = Poiji.fromExcel(inputStream, PoijiExcelType.XLSX, UserExcel.class);
 
 		List<User> users = rows.stream().map(e -> new User(e.getUserId(), e.getName(), e.getEmailId(), e.getAge(),
 				e.getSalary(), e.getDepeartment(), e.getCountry())).collect(Collectors.toList());
@@ -23,8 +22,9 @@ public class ExcelUtils {
 		return users;
 	}
 
-	public static void main(String[] args) {
-		//new ExcelUtils().userDataExcelProcessing("src/main/java/com/usermanagement/utils/users.xlsx");
+	public File exportToExcel(List<User> users) {
+
+		return null;
 	}
 
 }
