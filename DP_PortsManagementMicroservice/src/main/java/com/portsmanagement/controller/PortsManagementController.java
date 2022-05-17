@@ -1,7 +1,10 @@
 package com.portsmanagement.controller;
 
+import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.portsmanagement.exception.ResourceNotFoundException;
 import com.portsmanagement.model.Port;
 import com.portsmanagement.repository.PortRepository;
+import com.portsmanagement.utils.CSVUtils;
 import com.portsmanagement.utils.ExcelUtils;
 import com.portsmanagement.utils.ResponseMessage;
 
@@ -65,5 +69,14 @@ public class PortsManagementController {
 		}
 
 	}
+	
+    @GetMapping("/exportPorts")
+    public void exportPorts(HttpServletResponse response) throws IOException {
+        response.setContentType("text/csv");
+        response.setHeader("Content-Disposition", "attachment; file=Ports+"+new Date().toGMTString()+".csv");
+        CSVUtils csvUtils = new CSVUtils();
+        
+        csvUtils.downloadCsv(response.getWriter(), portRepository.findAll()) ;
+    }
 
 }

@@ -71,9 +71,9 @@ public class UserManagementController {
 	}
 		
 	    @GetMapping("/exportUsers")
-	    public void downloadCsv(HttpServletResponse response) throws IOException {
+	    public void exportUsers(HttpServletResponse response) throws IOException {
 	        response.setContentType("text/csv");
-	        response.setHeader("Content-Disposition", "attachment; file=Users.csv");
+	        response.setHeader("Content-Disposition", "attachment; file=Users"+new Date().toGMTString()+".csv");
 	        CSVUtils csvUtils = new CSVUtils();
 	        
 	        csvUtils.downloadCsv(response.getWriter(), userRepository.findAll()) ;

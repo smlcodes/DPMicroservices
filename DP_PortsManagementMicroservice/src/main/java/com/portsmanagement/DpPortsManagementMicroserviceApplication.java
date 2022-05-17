@@ -10,9 +10,9 @@ public class DpPortsManagementMicroserviceApplication {
 		SpringApplication.run(DpPortsManagementMicroserviceApplication.class, args);
 		System.out.println(" ========================================== ");
 		System.out.println(" DP : Ports");
-		System.out.println("http://localhost:9051/dpports");
+		System.out.println("http://localhost:9061/dpports");
 		
-		System.out.println("\n Swagger UI : http://localhost:9061/swagger-ui/index.html");
+		System.out.println("\n http://localhost:9061/dpports/swagger-ui/index.html");
 		System.out.println(" ========================================== ");
 		
 		System.out.println("\t ");

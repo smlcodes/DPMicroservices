@@ -12,7 +12,7 @@ public class DpUserManagementMicroserviceApplication {
 		System.out.println(" DP : UserManagementMicroserice");
 		System.out.println("http://localhost:9051/dpuser");
 		
-		System.out.println("\n Swagger UI : http://localhost:9051/swagger-ui/index.html");
+		System.out.println("\nhttp://localhost:9051/dpuser/swagger-ui/index.html");
 		System.out.println(" ========================================== ");
 		
 		System.out.println("\t ");
