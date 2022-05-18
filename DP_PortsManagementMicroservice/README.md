@@ -1,3 +1,14 @@
+```java
+C:\Git\DPMicroservices\DP_PortsManagementMicroservice\target
+
+java -jar -Dserver.port=9061 dpports-1.0.jar
+
+java -jar -Dserver.port=9062 dpports-1.0.jar
+
+java -jar -Dserver.port=9063 dpports-1.0.jar
+
+java -jar -Dserver.port=9064 dpports-1.0.jar
+```
 # DP_UserManagementMicroservice
 -----------------------------------------------
 
@@ -8,13 +19,23 @@
 	server.port=9051
 	  
 	### Context root ########
-	server.contextPath=/DPUserManagementService
+	server.contextPath=/dpportsManagementService
 	```
 
 2. Build Jar & run  
     ```
-    java -jar dpuser-1.0.jar
+    java -jar dpports-1.0.jar
     ```
+
+C:\Git\DPMicroservices\DP_UserManagementMicroservice\target
+
+java -jar -Dserver.port=9061 dpports-1.0.jar
+
+java -jar -Dserver.port=9062 dpports-1.0.jar
+
+java -jar -Dserver.port=9063 dpports-1.0.jar
+
+java -jar -Dserver.port=9064 dpports-1.0.jar
 
 
 
