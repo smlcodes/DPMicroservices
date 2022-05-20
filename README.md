@@ -1,3 +1,6 @@
+![Architecture](https://user-images.githubusercontent.com/20472904/169528064-4c0ccb83-31ba-49e7-952d-b7d07a85fc68.png)
+
+
 # Login
 	- Azure AD Users, Enable Google, Microsoft
 	- JWT Token to call MicroServices
