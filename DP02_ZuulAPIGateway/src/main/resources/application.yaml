@@ -1,0 +1,36 @@
+server:
+  port: 9072
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9071/eureka/
+
+
+# without Eureka Server
+zuul:
+  routes:
+    users-service:
+      url: http://localhost:9051/dpuser/
+      
+    ports-service:
+      url: http://localhost:9061/dpports/
+      
+    eureka-users:
+      path: /eusers/**
+      serviceId: DPUSERS-SERVICE  
+ 
+    eureka-ports:
+      path: /eports/**
+      serviceId: DPPORTS-SERVICE        
+
+
+  host:
+    connect-timeout-millis: 2000
+    socket-timeout-millis: 5000
