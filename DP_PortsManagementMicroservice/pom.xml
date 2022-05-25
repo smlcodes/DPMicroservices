@@ -14,9 +14,12 @@
 	<version>1.0</version>
 	<name>DP_PortsManagementMicroservice</name>
 	<description>DPPortsManagement</description>
-	<properties>
+	
+	<properties>		
 		<java.version>1.8</java.version>
 	</properties>
+
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,7 +40,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 
@@ -91,8 +93,8 @@
 		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<version>3.1.2</version>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>		
+			<version>3.1.2</version>	
 		</dependency>
 
 
@@ -100,7 +102,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		
 	</dependencies>
+
+ 
 
 	<build>
 		<plugins>
